@@ -28,7 +28,7 @@ export const getTestCommand = async (
         // argument which tells jest to include tests' locations in the generated json output
         '--testLocationInResults',
         // output file
-        `--outputFile="${outputFile}"`,
+        `--outputFile="../${outputFile}"`,
     ];
 
     return newCommandBuilder.filter(Boolean).join(' ');
