@@ -75,7 +75,7 @@ export const createReport = (
             dir: workingDirectory || '',
             tag: getReportTag(options),
             title: insertArgs(customTitle || i18n('summaryTitle'), {
-                dir: workingDirectory ? `for \`${workingDirectory}\`` : '',
+                dir: workingDirectory ? `for \`${workingDirectory}\`` : 'My Directory',
             }),
             sha: getSha(),
         });
